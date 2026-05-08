@@ -1,0 +1,130 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background: #f0f0f0; 
+    padding: 20px;
+}
+.cv-container { 
+    display: flex; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.sidebar { 
+    width: 35%; 
+    padding: 30px 20px; 
+    background: #f8f9fa;
+}
+.photo-box { position: relative; margin-bottom: 30px; }
+.photo-border { 
+    position: absolute; 
+    top: -10px; left: -10px; 
+    width: 80px; height: 40px; 
+    background: #d6e4f0; 
+    z-index: 1;
+}
+.photo-box img { 
+    width: 100%; 
+    position: relative; 
+    z-index: 2;
+}
+.section-title { 
+    background: #1e3a5f; 
+    color: white; 
+    padding: 8px; 
+    text-align: center; 
+    font-weight: 600; 
+    margin: 25px 0 15px 0; 
+}
+.contact-item { margin: 12px 0; font-size: 14px; }
+.contact-item i { width: 20px; color: #1e3a5f; }
+.skill-item { margin: 15px 0; }
+.skill-item span { font-size: 14px; font-weight: 600; }
+.skill-bar { 
+    background: #e0e0e0; 
+    height: 20px; 
+    margin-top: 5px; 
+}
+.skill-progress { 
+    background: #1e3a5f; 
+    height: 100%; 
+    width: 0;
+    color: white; 
+    font-size: 12px; 
+    text-align: right; 
+    padding-right: 5px; 
+    line-height: 20px;
+    transition: width 1.5s ease;
+}
+.skills-list { list-style: none; }
+.skills-list li { margin: 8px 0; font-size: 14px; }
+.main-content { 
+    width: 65%; 
+    padding: 30px; 
+}
+.name-box { 
+    background: #d6e4f0; 
+    padding: 20px; 
+    margin-bottom: 30px; 
+}
+.name-box h1 { 
+    color: #1e3a5f; 
+    font-size: 36px; 
+    letter-spacing: 2px;
+}
+.section-header { 
+    background: #1e3a5f; 
+    color: white; 
+    padding: 8px; 
+    text-align: center; 
+    font-weight: 600; 
+    margin: 25px 0 15px 0; 
+}
+.profil-text { line-height: 1.6; margin-bottom: 20px; }
+.accordion-item { border: 1px solid #ddd; margin-bottom: 10px; }
+.accordion-title { 
+    padding: 12px; 
+    background: #f8f9fa; 
+    cursor: pointer; 
+    font-weight: 600;
+}
+.accordion-content { 
+    padding: 12px; 
+    display: none; 
+    background: white;
+}
+.project-card { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+}
+.project-card h3 { color: #1e3a5f; margin-bottom: 8px; }
+.tags { margin: 10px 0; }
+.tag { 
+    background: #d6e4f0; 
+    color: #1e3a5f; 
+    padding: 4px 10px; 
+    border-radius: 15px; 
+    font-size: 12px; 
+    margin-right: 5px; 
+}
+#contactForm input, #contactForm textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 8px 0; 
+    border: 1px solid #ddd; 
+}
+#contactForm button { 
+    background: #1e3a5f; 
+    color: white; 
+    padding: 12px 30px; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: 600;
+}
+.error { color: red; font-size: 12px; display: block; height: 15px; }
+@media (max-width: 768px) {
+  .cv-container { flex-direction: column; }
+  .sidebar,.main-content { width: 100%; }
+}
